@@ -9,9 +9,11 @@ const calculator = {
 };
 
 function displayValue(evt) {
-  console.log(evt.target.value);
-  calculator.value = evt.target.value;
-  refs.output.value = calculator.value;
+  if (evt.target.nodeName === "BUTTON") {
+    calculator.value = evt.target.value;
+    let getNum = Number(evt.target.value);
+    refs.output.value = evt.target.value;
+  }
 }
 
 refs.calculatorKeys.addEventListener("click", displayValue);
