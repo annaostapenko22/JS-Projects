@@ -25,6 +25,7 @@ function updateDisplay() {
   refs.output.value = calculator.value;
 }
 updateDisplay();
+
 function displayValue(evt) {
   if (evt.target.nodeName !== "BUTTON") {
     return;
