@@ -48,7 +48,9 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "axios": "^0.19.1",
     "core-js": "^3.3.4",
+    "firebase": "^7.6.2",
     "handlebars": "^4.5.3",
     "short-id": "0.1.0-1",
     "typescript": "^3.7.4"
